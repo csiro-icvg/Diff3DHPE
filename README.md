@@ -63,7 +63,7 @@ Please refer to [data/README.MD](data/README.MD)
 ## Experiments
 Please refer to [Experiments.sh](Experiments.sh)
 
-Pretrained models will be available later.
+Pretrained models [OneDirve](https://1drv.ms/f/s!Ampei1FS2NJsl4pZ_flL60vO81bLpg?e=GUnznL)
 
 
 
