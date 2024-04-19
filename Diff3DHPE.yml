@@ -1,0 +1,23 @@
+name: diff3DHPE
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - cudatoolkit=11.0.221
+  - cudnn=8.0.5.39
+  - einops=0.3.0=py_0
+  - h5py=2.10.0
+  - pip=20.2.2=py38_0
+  - python=3.8.2
+  - tqdm=4.50.0
+  - pip:
+      - --find-links https://download.pytorch.org/whl/torch_stable.html
+      - torch==1.7.1+cu110
+      - torchvision==0.8.2+cu110
+      - matplotlib==3.3.2
+      - numpy==1.24.3
+      - scipy==1.10.1
+      - thop==0.1.1-2209072238
+      - timm==0.3.4
+      - ffprobe==0.5

@@ -1,0 +1,31 @@
+{
+    "params": {
+        "seed": 42,
+        "dataset": "h36m",
+        "keypoints": "cpn_ft_h36m_dbb",
+        "out_all": true,
+        "model": "ConditionalDiffusionMixSTES2SGRANDLinLift",
+        "subjects_train": "S1,S5,S6,S7,S8",
+        "subjects_test": "S9,S11",
+        "actions": "*",
+        "epochs": 200,
+        "batch_size": 64,
+        "batch_size_eval": 512,
+        "learning_rate": 4e-5,
+        "lr_decay": 0.99,
+        "patience": 200,
+        "max_time": 200,
+        "stride": 81,
+        "number_of_frames": 81,
+        "beta_schedule": "cosine",
+        "timesteps": 1000,
+        "sampling_timesteps": 20,
+        "data_augmentation": true,
+        "test_time_augmentation": true,
+        "transformer_depth": 8,
+        "embed_dim": 512,
+        "with_time_emb": true,
+        "clip_denoised": true,
+        "ddim_sampling_eta": 0.0
+    }
+}
