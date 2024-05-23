@@ -104,8 +104,6 @@ if args.pretrained_model is not None:
     params['pretrained_model'] = str(args.pretrained_model)
 else:
     params['pretrained_model'] = None
-if args.use_both_loss is not None:
-    params['use_both_loss'] = True if args.use_both_loss=='True' else False
 if args.clip_loss is not None:
     params['clip_loss'] = True if args.clip_loss=='True' else False
 
