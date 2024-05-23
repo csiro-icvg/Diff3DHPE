@@ -8,7 +8,7 @@ python run_conditionalDiffusionDDIM3dhpeNormalDirectPredictVariableLoss.py --gpu
 #### Training
 python run_conditionalDiffusionDDIM3dhpeNormalDirectPredictVariableLoss.py --gpu_id 0,1,2,3,4,5,6,7 --workers 8 -lr 4e-4 --lr-decay 0.99 -b 24 -e 200 --max_time 119.5 --patience 999 --batch-size-eval 256 --timesteps 1000 --with_time_emb True --sampling_timesteps 5 --keypoints gt --beta_schedule cosine --ddim_sampling_eta 0 --embed_dim 512 --transformer_depth 8 --stride 243 --number-of-frames 243 --clip_loss True -c checkpoint/h36m/ConditionalDiffusionMixSTES2SGRANDLinLift/gt/f243/ --config 'configs/h36m_gt_s2s_ConditionalDiffusionMixSTES2SGRANDLinLift.json'
 #### Evaluation
-python run_conditionalDiffusionDDIM3dhpeNormalDirectPredictVariableLoss.py --gpu_id 0,1,2,3,4,5,6,7 --workers 8 --batch-size-eval 256 --with_time_emb True --sampling_timesteps 6 --keypoints gt --ddim_sampling_eta 0 --stride 243 --number-of-frames 243 --clip_loss True -c checkpoint/h36m/ConditionalDiffusionMixSTES2SGRANDLinLift/gt/f243/ --evaluate ConditionalDiffusionMixSTES2SGRANDLinLift_l2_lr4e-4_useTembed_T_h36m_gt_243f.bin --config 'configs/h36m_gt_cpn_s2s_ConditionalDiffusionMixSTES2SGRANDLinLift.json'
+python run_conditionalDiffusionDDIM3dhpeNormalDirectPredictVariableLoss.py --gpu_id 0,1,2,3,4,5,6,7 --workers 8 --batch-size-eval 256 --with_time_emb True --sampling_timesteps 6 --keypoints gt --ddim_sampling_eta 0 --stride 243 --number-of-frames 243 --clip_loss True -c checkpoint/h36m/ConditionalDiffusionMixSTES2SGRANDLinLift/gt/f243/ --evaluate ConditionalDiffusionMixSTES2SGRANDLinLift_l2_lr4e-4_useTembed_T_h36m_gt_243f.bin --config 'configs/h36m_gt_s2s_ConditionalDiffusionMixSTES2SGRANDLinLift.json'
 
 ### MPI-INF-3DHP, GT, 27 frames
 #### Training
